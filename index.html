@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoElite | Venta de coches</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <a class="logo" href="index.html">AutoElite</a>
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Nosotros</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Coches nuevos y seminuevos</p>
+      <h1>Encuentra el coche ideal para tu camino</h1>
+      <p>Compra, vende o agenda una prueba de manejo con asesoría personalizada.</p>
+      <a class="btn" href="#catalogo">Ver catálogo</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="search-card">
+      <h2>Busca por tipo de coche</h2>
+      <div class="filters">
+        <button data-filter="todos" class="active">Todos</button>
+        <button data-filter="sedan">Sedán</button>
+        <button data-filter="suv">SUV</button>
+        <button data-filter="deportivo">Deportivo</button>
+      </div>
+    </section>
+
+    <section id="catalogo" class="catalog">
+      <article class="car-card" data-type="sedan">
+        <div class="car-img sedan"></div>
+        <h3>Toyota Corolla 2023</h3>
+        <p>Automático, bajo consumo, cámara de reversa.</p>
+        <span>$315,000 MXN</span>
+        <button class="quote-btn" data-car="Toyota Corolla 2023">Cotizar</button>
+      </article>
+
+      <article class="car-card" data-type="suv">
+        <div class="car-img suv"></div>
+        <h3>Mazda CX-5 2022</h3>
+        <p>SUV familiar, piel, pantalla táctil, sensores.</p>
+        <span>$448,000 MXN</span>
+        <button class="quote-btn" data-car="Mazda CX-5 2022">Cotizar</button>
+      </article>
+
+      <article class="car-card" data-type="deportivo">
+        <div class="car-img sport"></div>
+        <h3>Ford Mustang 2021</h3>
+        <p>Motor V8, modo sport, interiores premium.</p>
+        <span>$689,000 MXN</span>
+        <button class="quote-btn" data-car="Ford Mustang 2021">Cotizar</button>
+      </article>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Agenda una prueba de manejo</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Tu nombre" required />
+        <input type="email" id="email" placeholder="Tu correo" required />
+        <select id="carInterest" required>
+          <option value="">Selecciona un coche</option>
+          <option>Toyota Corolla 2023</option>
+          <option>Mazda CX-5 2022</option>
+          <option>Ford Mustang 2021</option>
+        </select>
+        <textarea id="message" placeholder="Mensaje" rows="4"></textarea>
+        <button class="btn" type="submit">Enviar solicitud</button>
+      </form>
+      <p id="formMessage" class="form-message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 AutoElite. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
